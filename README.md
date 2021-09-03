@@ -30,7 +30,9 @@
    - **GH_TOKEN:** The GitHub token generated above.
    - **WAKATIME_API_KEY:** The API key for your WakaTime account.
 
-Finally Enable the workflow under actions tab, because workflows are disabled by default for forks. 
+Finally Enable the workflow under actions tab, because workflows are disabled by default for forked repositories. 
+After this is done, you won't see the Gist updated yet, until the Workflow runs. 
 
-### Then trigger the workflow with a PR
-I have added an `on` event in the workflow to trigger it when a PR happens, by default it is only triggered at 00:00 UTC every day.
+### Trigger the workflow
+I have added an `on` event in the workflow to trigger it when a Pull Request happens, by default it is only triggered at 00:00 UTC every day.
+You can update this readme, and choose `"Create a new branch for this commit"` Then merge the PR and check your Pinned Gist.

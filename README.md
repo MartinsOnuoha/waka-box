@@ -30,4 +30,7 @@
    - **GH_TOKEN:** The GitHub token generated above.
    - **WAKATIME_API_KEY:** The API key for your WakaTime account.
 
-Finally Enable the workflow under actions tab, because workflows are disabled by default for forks. Then trigger the workflow with a PR
+Finally Enable the workflow under actions tab, because workflows are disabled by default for forks. 
+
+### Then trigger the workflow with a PR
+I have added an `on` event in the workflow to trigger it when a PR happens, by default it is only triggered at 00:00 UTC every day.
